@@ -12,7 +12,19 @@
 		DA48A3C91E948A7400C342F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA48A3C81E948A7400C342F2 /* Assets.xcassets */; };
 		DA48A3CC1E948A7400C342F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA48A3CA1E948A7400C342F2 /* Main.storyboard */; };
 		DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3D81E948DCE00C342F2 /* ByteOrder.m */; };
+		DA48A3E21E94954000C342F2 /* NetworkPragrammingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */; };
+		DA48A3EA1E9495A200C342F2 /* ByteOrderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA48A3E41E94954000C342F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA48A3B91E948A7400C342F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA48A3C01E948A7400C342F2;
+			remoteInfo = NetworkPragramming;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DA48A3C11E948A7400C342F2 /* NetworkPragramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPragramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		DA48A3D71E948DCE00C342F2 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteOrder.h; sourceTree = "<group>"; };
 		DA48A3D81E948DCE00C342F2 /* ByteOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByteOrder.m; sourceTree = "<group>"; };
 		DA48A3DA1E94929600C342F2 /* NetworkPragramming-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkPragramming-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA48A3DF1E94954000C342F2 /* NetworkPragrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkPragrammingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPragrammingTests.swift; sourceTree = "<group>"; };
+		DA48A3E31E94954000C342F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteOrderTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DA48A3BE1E948A7400C342F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA48A3DC1E94954000C342F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				DA48A3C31E948A7400C342F2 /* NetworkPragramming */,
+				DA48A3E01E94954000C342F2 /* NetworkPragrammingTests */,
 				DA48A3C21E948A7400C342F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				DA48A3C11E948A7400C342F2 /* NetworkPragramming.app */,
+				DA48A3DF1E94954000C342F2 /* NetworkPragrammingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +101,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		DA48A3E01E94954000C342F2 /* NetworkPragrammingTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */,
+				DA48A3E31E94954000C342F2 /* Info.plist */,
+				DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */,
+			);
+			path = NetworkPragrammingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +131,24 @@
 			productReference = DA48A3C11E948A7400C342F2 /* NetworkPragramming.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DA48A3DE1E94954000C342F2 /* NetworkPragrammingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA48A3E81E94954000C342F2 /* Build configuration list for PBXNativeTarget "NetworkPragrammingTests" */;
+			buildPhases = (
+				DA48A3DB1E94954000C342F2 /* Sources */,
+				DA48A3DC1E94954000C342F2 /* Frameworks */,
+				DA48A3DD1E94954000C342F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA48A3E51E94954000C342F2 /* PBXTargetDependency */,
+			);
+			name = NetworkPragrammingTests;
+			productName = NetworkPragrammingTests;
+			productReference = DA48A3DF1E94954000C342F2 /* NetworkPragrammingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +164,12 @@
 						DevelopmentTeam = 3LH7676BHR;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+					};
+					DA48A3DE1E94954000C342F2 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3LH7676BHR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA48A3C01E948A7400C342F2;
 					};
 				};
 			};
@@ -128,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				DA48A3C01E948A7400C342F2 /* NetworkPragramming */,
+				DA48A3DE1E94954000C342F2 /* NetworkPragrammingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +199,13 @@
 			files = (
 				DA48A3C91E948A7400C342F2 /* Assets.xcassets in Resources */,
 				DA48A3CC1E948A7400C342F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA48A3DD1E94954000C342F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +222,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA48A3DB1E94954000C342F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA48A3EA1E9495A200C342F2 /* ByteOrderTest.swift in Sources */,
+				DA48A3E21E94954000C342F2 /* NetworkPragrammingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA48A3E51E94954000C342F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA48A3C01E948A7400C342F2 /* NetworkPragramming */;
+			targetProxy = DA48A3E41E94954000C342F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA48A3CA1E948A7400C342F2 /* Main.storyboard */ = {
@@ -294,6 +378,38 @@
 			};
 			name = Release;
 		};
+		DA48A3E61E94954000C342F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3LH7676BHR;
+				INFOPLIST_FILE = NetworkPragrammingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragrammingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkPragramming.app/Contents/MacOS/NetworkPragramming";
+			};
+			name = Debug;
+		};
+		DA48A3E71E94954000C342F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3LH7676BHR;
+				INFOPLIST_FILE = NetworkPragrammingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragrammingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkPragramming.app/Contents/MacOS/NetworkPragramming";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -311,6 +427,15 @@
 			buildConfigurations = (
 				DA48A3D11E948A7400C342F2 /* Debug */,
 				DA48A3D21E948A7400C342F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA48A3E81E94954000C342F2 /* Build configuration list for PBXNativeTarget "NetworkPragrammingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA48A3E61E94954000C342F2 /* Debug */,
+				DA48A3E71E94954000C342F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
