@@ -13,13 +13,17 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+        if ByteOrder.order() == .big {
+            print("byte order is big")
         }
+        else if ByteOrder.order() == .little {
+            print("byte order is little")
+        }
+        else {
+            print ("byte order is unknown")
+        }
+        
+        print("num 256's representation \(Int(littleEndian: 256))")
     }
 
 

@@ -11,6 +11,7 @@
 		DA48A3C71E948A7400C342F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3C61E948A7400C342F2 /* ViewController.swift */; };
 		DA48A3C91E948A7400C342F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA48A3C81E948A7400C342F2 /* Assets.xcassets */; };
 		DA48A3CC1E948A7400C342F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA48A3CA1E948A7400C342F2 /* Main.storyboard */; };
+		DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3D81E948DCE00C342F2 /* ByteOrder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		DA48A3C81E948A7400C342F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA48A3CB1E948A7400C342F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA48A3CD1E948A7400C342F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA48A3D71E948DCE00C342F2 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteOrder.h; sourceTree = "<group>"; };
+		DA48A3D81E948DCE00C342F2 /* ByteOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByteOrder.m; sourceTree = "<group>"; };
+		DA48A3DA1E94929600C342F2 /* NetworkPragramming-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkPragramming-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +56,24 @@
 		DA48A3C31E948A7400C342F2 /* NetworkPragramming */ = {
 			isa = PBXGroup;
 			children = (
+				DA48A3D31E948A9800C342F2 /* Utils */,
 				DA48A3C41E948A7400C342F2 /* AppDelegate.swift */,
 				DA48A3C61E948A7400C342F2 /* ViewController.swift */,
+				DA48A3DA1E94929600C342F2 /* NetworkPragramming-Bridging-Header.h */,
 				DA48A3C81E948A7400C342F2 /* Assets.xcassets */,
 				DA48A3CA1E948A7400C342F2 /* Main.storyboard */,
 				DA48A3CD1E948A7400C342F2 /* Info.plist */,
 			);
 			path = NetworkPragramming;
+			sourceTree = "<group>";
+		};
+		DA48A3D31E948A9800C342F2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA48A3D71E948DCE00C342F2 /* ByteOrder.h */,
+				DA48A3D81E948DCE00C342F2 /* ByteOrder.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +109,7 @@
 					DA48A3C01E948A7400C342F2 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 3LH7676BHR;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,6 +151,7 @@
 			files = (
 				DA48A3C71E948A7400C342F2 /* ViewController.swift in Sources */,
 				DA48A3C51E948A7400C342F2 /* AppDelegate.swift in Sources */,
+				DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,12 +265,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3LH7676BHR;
 				INFOPLIST_FILE = NetworkPragramming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragramming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -262,12 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3LH7676BHR;
 				INFOPLIST_FILE = NetworkPragramming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragramming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
