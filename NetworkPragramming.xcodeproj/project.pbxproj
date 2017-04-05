@@ -14,6 +14,9 @@
 		DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3D81E948DCE00C342F2 /* ByteOrder.m */; };
 		DA48A3E21E94954000C342F2 /* NetworkPragrammingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */; };
 		DA48A3EA1E9495A200C342F2 /* ByteOrderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */; };
+		DAEA683C1E94E1E800176180 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA683B1E94E1E800176180 /* NetworkInterfaceUtil.m */; };
+		DAEA683F1E94E26C00176180 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA683E1E94E26C00176180 /* NetworkInterfaceAddress.m */; };
+		DAEA68411E94E84300176180 /* NetworkInterfaceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEA68401E94E84300176180 /* NetworkInterfaceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPragrammingTests.swift; sourceTree = "<group>"; };
 		DA48A3E31E94954000C342F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteOrderTest.swift; sourceTree = "<group>"; };
+		DAEA683A1E94E1E800176180 /* NetworkInterfaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterfaceUtil.h; sourceTree = "<group>"; };
+		DAEA683B1E94E1E800176180 /* NetworkInterfaceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceUtil.m; sourceTree = "<group>"; };
+		DAEA683D1E94E26C00176180 /* NetworkInterfaceAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterfaceAddress.h; sourceTree = "<group>"; };
+		DAEA683E1E94E26C00176180 /* NetworkInterfaceAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceAddress.m; sourceTree = "<group>"; };
+		DAEA68401E94E84300176180 /* NetworkInterfaceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkInterfaceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				DA48A3D71E948DCE00C342F2 /* ByteOrder.h */,
 				DA48A3D81E948DCE00C342F2 /* ByteOrder.m */,
+				DAEA683A1E94E1E800176180 /* NetworkInterfaceUtil.h */,
+				DAEA683B1E94E1E800176180 /* NetworkInterfaceUtil.m */,
+				DAEA683D1E94E26C00176180 /* NetworkInterfaceAddress.h */,
+				DAEA683E1E94E26C00176180 /* NetworkInterfaceAddress.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -107,6 +119,7 @@
 				DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */,
 				DA48A3E31E94954000C342F2 /* Info.plist */,
 				DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */,
+				DAEA68401E94E84300176180 /* NetworkInterfaceTest.swift */,
 			);
 			path = NetworkPragrammingTests;
 			sourceTree = "<group>";
@@ -217,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA48A3C71E948A7400C342F2 /* ViewController.swift in Sources */,
+				DAEA683F1E94E26C00176180 /* NetworkInterfaceAddress.m in Sources */,
 				DA48A3C51E948A7400C342F2 /* AppDelegate.swift in Sources */,
+				DAEA683C1E94E1E800176180 /* NetworkInterfaceUtil.m in Sources */,
 				DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA48A3EA1E9495A200C342F2 /* ByteOrderTest.swift in Sources */,
+				DAEA68411E94E84300176180 /* NetworkInterfaceTest.swift in Sources */,
 				DA48A3E21E94954000C342F2 /* NetworkPragrammingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +454,7 @@
 				DA48A3E71E94954000C342F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
