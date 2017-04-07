@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3E40FE1E973B5800D95BFA /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E40FD1E973B5800D95BFA /* AddrInfo.m */; };
 		DA48A3C51E948A7400C342F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3C41E948A7400C342F2 /* AppDelegate.swift */; };
 		DA48A3C71E948A7400C342F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3C61E948A7400C342F2 /* ViewController.swift */; };
 		DA48A3C91E948A7400C342F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA48A3C81E948A7400C342F2 /* Assets.xcassets */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA3E40FC1E973B5800D95BFA /* AddrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrInfo.h; sourceTree = "<group>"; };
+		DA3E40FD1E973B5800D95BFA /* AddrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrInfo.m; sourceTree = "<group>"; };
 		DA48A3C11E948A7400C342F2 /* NetworkPragramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPragramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48A3C41E948A7400C342F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA48A3C61E948A7400C342F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				DAEA683B1E94E1E800176180 /* NetworkInterfaceUtil.m */,
 				DAEA683D1E94E26C00176180 /* NetworkInterfaceAddress.h */,
 				DAEA683E1E94E26C00176180 /* NetworkInterfaceAddress.m */,
+				DA3E40FC1E973B5800D95BFA /* AddrInfo.h */,
+				DA3E40FD1E973B5800D95BFA /* AddrInfo.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				DAEA683F1E94E26C00176180 /* NetworkInterfaceAddress.m in Sources */,
 				DA48A3C51E948A7400C342F2 /* AppDelegate.swift in Sources */,
 				DAEA683C1E94E1E800176180 /* NetworkInterfaceUtil.m in Sources */,
+				DA3E40FE1E973B5800D95BFA /* AddrInfo.m in Sources */,
 				DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,5 +27,9 @@ class NetworkInterfaceTest: XCTestCase {
             print("\(add)")
         }
     }
+    
+    func testAddrInfo() {
+        AddrInfo.test(withHost: "www.google.com", service: "443")
+    }
 
 }
