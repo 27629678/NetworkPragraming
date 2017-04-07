@@ -12,6 +12,18 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        runBSDSocketServer(onPort: 2004)
+    }
+    
+    func runBSDSocketServer(onPort port: UInt) {
+        let server: BSDSocketServer = BSDSocketServer.listen(onPort: port)
+        
+        guard server.errCode == .noERROR else {
+            return
+        }
+        
+        server.startEcho()
     }
     
 }
