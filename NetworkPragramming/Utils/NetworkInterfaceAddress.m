@@ -10,4 +10,16 @@
 
 @implementation NetworkInterfaceAddress
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"\n{"
+            @"\n\tname: %@,"
+            @"\n\tver: %@,"
+            @"\n\tip: %@,"
+            @"\n\tmask: %@,"
+            @"\n\tgate: %@"
+            @"\n}",
+            self.name, @(self.version), self.address, self.mask, self.gate];
+}
+
 @end

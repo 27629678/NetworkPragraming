@@ -12,6 +12,6 @@
 
 @interface NetworkInterfaceUtil : NSObject
 
-+ (NSArray<NetworkInterfaceAddress *> *)allActiveInterfaceAddresses;
++ (nonnull NSArray<NetworkInterfaceAddress *> *)allActiveInterfaceAddresses;
 
 @end    // NetworkInterfaceUtil

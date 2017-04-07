@@ -21,7 +21,11 @@ class NetworkInterfaceTest: XCTestCase {
     }
 
     func testExample() {
-        NetworkInterfaceUtil.allActiveInterfaceAddresses()
+        let adds = NetworkInterfaceUtil.allActiveInterfaceAddresses();
+        
+        for add: NetworkInterfaceAddress in adds {
+            print("\(add)")
+        }
     }
 
 }

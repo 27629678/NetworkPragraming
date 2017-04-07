@@ -32,7 +32,9 @@
         char nmask[INET6_ADDRSTRLEN];
         char ngate[INET6_ADDRSTRLEN];
         
+        IPVersion ip_ver = IPVersionUnknown;
         if (interface->ifa_addr->sa_family == AF_INET) {
+            ip_ver = IPVersion4;
             inet_ntop(AF_INET, &((struct sockaddr_in *)interface->ifa_addr)->sin_addr, naddr, INET_ADDRSTRLEN);
             if (interface->ifa_netmask != NULL) {
                 inet_ntop(AF_INET, &((struct sockaddr_in *)interface->ifa_netmask)->sin_addr, nmask, INET_ADDRSTRLEN);
@@ -42,6 +44,7 @@
             }
         }
         else if (interface->ifa_addr->sa_family == AF_INET6) {
+            ip_ver = IPVersion6;
             inet_ntop(AF_INET6, &((struct sockaddr_in *)interface->ifa_addr)->sin_addr, naddr, INET6_ADDRSTRLEN);
             if (interface->ifa_netmask != NULL) {
                 inet_ntop(AF_INET, &((struct sockaddr_in *)interface->ifa_netmask)->sin_addr, nmask, INET6_ADDRSTRLEN);
@@ -55,11 +58,15 @@
             
             continue;
         }
-        NSLog(@"----------------------\n");
-        NSLog(@"name:%@", [NSString stringWithUTF8String:interface->ifa_name]);
-        NSLog(@"ip:%@", [NSString stringWithUTF8String:naddr]);
-        NSLog(@"mask:%@", [NSString stringWithUTF8String:nmask]);
-        NSLog(@"gate:%@", [NSString stringWithUTF8String:ngate]);
+        
+        NetworkInterfaceAddress *addr = [NetworkInterfaceAddress new];
+        addr.name = [NSString stringWithUTF8String:interface->ifa_name];
+        addr.address = [NSString stringWithUTF8String:naddr];
+        addr.mask = [NSString stringWithUTF8String:nmask];
+        addr.gate = [NSString stringWithUTF8String:ngate];
+        addr.version = ip_ver;
+        
+        [ifs addObject:addr];
         
         interface = interface->ifa_next;
     }
