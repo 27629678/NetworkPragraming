@@ -29,6 +29,9 @@ class NetworkInterfaceTest: XCTestCase {
     }
     
     func testAddrInfo() {
+        AddrInfo.test(withHost: "imap.163.com", service: "993")
+        AddrInfo.test(withHost: "www.163.com", service: "80")
+        AddrInfo.test(withHost: "www.baidu.com", service: "443")
         AddrInfo.test(withHost: "www.google.com", service: "443")
     }
 

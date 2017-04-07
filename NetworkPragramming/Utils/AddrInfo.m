@@ -70,7 +70,7 @@
     
     struct addrinfo *res;
     struct addrinfo *results = info.results;
-    
+    NSLog(@"populate host:%@:%@", host, service);
     for (res = results; res != NULL; res = res->ai_next) {
         void* addr;
         NSString *ipver = @"";
