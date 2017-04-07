@@ -16,6 +16,7 @@
 #import <sys/socket.h>
 
 #import <netinet/in.h>
+#import <netinet6/in6.h>
 
 @implementation NetworkInterfaceUtil
 
@@ -44,12 +45,12 @@
         }
         else if (interface->ifa_addr->sa_family == AF_INET6) {
             ip_ver = IPVersion6;
-            inet_ntop(AF_INET6, &((struct sockaddr_in *)interface->ifa_addr)->sin_addr, naddr, INET6_ADDRSTRLEN);
+            inet_ntop(AF_INET6, &((struct sockaddr_in6 *)interface->ifa_addr)->sin6_addr, naddr, INET6_ADDRSTRLEN);
             if (interface->ifa_netmask != NULL) {
-                inet_ntop(AF_INET, &((struct sockaddr_in *)interface->ifa_netmask)->sin_addr, nmask, INET6_ADDRSTRLEN);
+                inet_ntop(AF_INET, &((struct sockaddr_in6 *)interface->ifa_netmask)->sin6_addr, nmask, INET6_ADDRSTRLEN);
             }
             if (interface->ifa_dstaddr != NULL) {
-                inet_ntop(AF_INET, &((struct sockaddr_in *)interface->ifa_dstaddr)->sin_addr, ngate, INET6_ADDRSTRLEN);
+                inet_ntop(AF_INET, &((struct sockaddr_in6 *)interface->ifa_dstaddr)->sin6_addr, ngate, INET6_ADDRSTRLEN);
             }
         }
         else {
