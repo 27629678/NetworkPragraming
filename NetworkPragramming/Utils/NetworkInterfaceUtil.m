@@ -25,7 +25,6 @@
     struct ifaddrs *ifa = NULL;
     int success = getifaddrs(&ifa);
     
-    int ip_version = 0;
     struct ifaddrs *interface = ifa;
     while (interface != NULL && success != -1) {
         char naddr[INET6_ADDRSTRLEN];
