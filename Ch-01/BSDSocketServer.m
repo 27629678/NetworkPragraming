@@ -70,7 +70,7 @@
     NSLog(@"start listen using listen descriptor:%@", @(fd));
     
     int conn_fd;
-    char buf[MAXLINE];      // Using UInt8 bug[MAXLINE] instead for data stream, such as image etc.
+    char buf[MAXLINE];      // Using UInt8 buf[MAXLINE] instead for data stream, such as image etc.
     socklen_t cli_len;
     struct sockaddr_in cli_addr;
     
