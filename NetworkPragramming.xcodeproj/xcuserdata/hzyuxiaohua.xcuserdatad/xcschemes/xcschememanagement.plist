@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NetworkPragramming.xcscheme</key>
+		<key>Client.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+		<key>Server.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +23,36 @@
 			<true/>
 		</dict>
 		<key>DA48A3DE1E94954000C342F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABFDB0C1E98896D00B75179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABFDB221E9889D800B75179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABFDB381E9889EB00B75179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABFDB4E1E988A2700B75179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABFDB961E988B2800B75179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABFDBA91E988B8800B75179</key>
 		<dict>
 			<key>primary</key>
 			<true/>

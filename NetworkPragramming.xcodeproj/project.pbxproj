@@ -7,64 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA3E40FE1E973B5800D95BFA /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E40FD1E973B5800D95BFA /* AddrInfo.m */; };
-		DA48A3C51E948A7400C342F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3C41E948A7400C342F2 /* AppDelegate.swift */; };
-		DA48A3C71E948A7400C342F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3C61E948A7400C342F2 /* ViewController.swift */; };
-		DA48A3C91E948A7400C342F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA48A3C81E948A7400C342F2 /* Assets.xcassets */; };
-		DA48A3CC1E948A7400C342F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA48A3CA1E948A7400C342F2 /* Main.storyboard */; };
-		DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3D81E948DCE00C342F2 /* ByteOrder.m */; };
-		DA48A3E21E94954000C342F2 /* NetworkPragrammingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */; };
-		DA48A3EA1E9495A200C342F2 /* ByteOrderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */; };
-		DAE7E6E41E97718300B4A685 /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7E6E31E97718300B4A685 /* BSDSocketServer.m */; };
-		DAEA683C1E94E1E800176180 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA683B1E94E1E800176180 /* NetworkInterfaceUtil.m */; };
-		DAEA683F1E94E26C00176180 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA683E1E94E26C00176180 /* NetworkInterfaceAddress.m */; };
-		DAEA68411E94E84300176180 /* NetworkInterfaceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEA68401E94E84300176180 /* NetworkInterfaceTest.swift */; };
+		DABFDB521E988A2700B75179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB511E988A2700B75179 /* AppDelegate.swift */; };
+		DABFDB541E988A2700B75179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB531E988A2700B75179 /* ViewController.swift */; };
+		DABFDB571E988A2700B75179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB551E988A2700B75179 /* Main.storyboard */; };
+		DABFDB591E988A2700B75179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB581E988A2700B75179 /* Assets.xcassets */; };
+		DABFDB5C1E988A2700B75179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB5A1E988A2700B75179 /* LaunchScreen.storyboard */; };
+		DABFDB9A1E988B2800B75179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB991E988B2800B75179 /* AppDelegate.swift */; };
+		DABFDB9C1E988B2800B75179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB9B1E988B2800B75179 /* ViewController.swift */; };
+		DABFDB9E1E988B2800B75179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB9D1E988B2800B75179 /* Assets.xcassets */; };
+		DABFDBA11E988B2800B75179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB9F1E988B2800B75179 /* Main.storyboard */; };
+		DABFDBAD1E988B8800B75179 /* UnitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBAC1E988B8800B75179 /* UnitTesting.swift */; };
+		DABFDBB71E988D5100B75179 /* ByteOrderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBB51E988D5100B75179 /* ByteOrderTest.swift */; };
+		DABFDBB81E988D5100B75179 /* NetworkInterfaceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBB61E988D5100B75179 /* NetworkInterfaceTest.swift */; };
+		DABFDBC61E988D5B00B75179 /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBB1E988D5B00B75179 /* AddrInfo.m */; };
+		DABFDBC71E988D5B00B75179 /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBB1E988D5B00B75179 /* AddrInfo.m */; };
+		DABFDBC81E988D5B00B75179 /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBB1E988D5B00B75179 /* AddrInfo.m */; };
+		DABFDBC91E988D5B00B75179 /* BSDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */; };
+		DABFDBCA1E988D5B00B75179 /* BSDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */; };
+		DABFDBCB1E988D5B00B75179 /* BSDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */; };
+		DABFDBCC1E988D5B00B75179 /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */; };
+		DABFDBCD1E988D5B00B75179 /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */; };
+		DABFDBCE1E988D5B00B75179 /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */; };
+		DABFDBCF1E988D5B00B75179 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC11E988D5B00B75179 /* ByteOrder.m */; };
+		DABFDBD01E988D5B00B75179 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC11E988D5B00B75179 /* ByteOrder.m */; };
+		DABFDBD11E988D5B00B75179 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC11E988D5B00B75179 /* ByteOrder.m */; };
+		DABFDBD21E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */; };
+		DABFDBD31E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */; };
+		DABFDBD41E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */; };
+		DABFDBD51E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
+		DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
+		DABFDBD71E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA48A3E41E94954000C342F2 /* PBXContainerItemProxy */ = {
+		DABFDBAF1E988B8800B75179 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA48A3B91E948A7400C342F2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA48A3C01E948A7400C342F2;
-			remoteInfo = NetworkPragramming;
+			remoteGlobalIDString = DABFDB961E988B2800B75179;
+			remoteInfo = Server;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA3E40FC1E973B5800D95BFA /* AddrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrInfo.h; sourceTree = "<group>"; };
-		DA3E40FD1E973B5800D95BFA /* AddrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrInfo.m; sourceTree = "<group>"; };
-		DA48A3C11E948A7400C342F2 /* NetworkPragramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPragramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA48A3C41E948A7400C342F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA48A3C61E948A7400C342F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA48A3C81E948A7400C342F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA48A3CB1E948A7400C342F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DA48A3CD1E948A7400C342F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA48A3D71E948DCE00C342F2 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteOrder.h; sourceTree = "<group>"; };
-		DA48A3D81E948DCE00C342F2 /* ByteOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByteOrder.m; sourceTree = "<group>"; };
-		DA48A3DA1E94929600C342F2 /* NetworkPragramming-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkPragramming-Bridging-Header.h"; sourceTree = "<group>"; };
-		DA48A3DF1E94954000C342F2 /* NetworkPragrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkPragrammingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPragrammingTests.swift; sourceTree = "<group>"; };
-		DA48A3E31E94954000C342F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteOrderTest.swift; sourceTree = "<group>"; };
-		DAE7E6E21E97718300B4A685 /* BSDSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDSocketServer.h; sourceTree = "<group>"; };
-		DAE7E6E31E97718300B4A685 /* BSDSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDSocketServer.m; sourceTree = "<group>"; };
-		DAEA683A1E94E1E800176180 /* NetworkInterfaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterfaceUtil.h; sourceTree = "<group>"; };
-		DAEA683B1E94E1E800176180 /* NetworkInterfaceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceUtil.m; sourceTree = "<group>"; };
-		DAEA683D1E94E26C00176180 /* NetworkInterfaceAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterfaceAddress.h; sourceTree = "<group>"; };
-		DAEA683E1E94E26C00176180 /* NetworkInterfaceAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceAddress.m; sourceTree = "<group>"; };
-		DAEA68401E94E84300176180 /* NetworkInterfaceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkInterfaceTest.swift; sourceTree = "<group>"; };
+		DABFDB4F1E988A2700B75179 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFDB511E988A2700B75179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DABFDB531E988A2700B75179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DABFDB561E988A2700B75179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DABFDB581E988A2700B75179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABFDB5B1E988A2700B75179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DABFDB5D1E988A2700B75179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABFDB971E988B2800B75179 /* Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Server.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFDB991E988B2800B75179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DABFDB9B1E988B2800B75179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DABFDB9D1E988B2800B75179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABFDBA01E988B2800B75179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DABFDBA21E988B2800B75179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABFDBAA1E988B8800B75179 /* UnitTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFDBAC1E988B8800B75179 /* UnitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTesting.swift; sourceTree = "<group>"; };
+		DABFDBAE1E988B8800B75179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABFDBB41E988BBC00B75179 /* Server-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Server-Bridging-Header.h"; sourceTree = "<group>"; };
+		DABFDBB51E988D5100B75179 /* ByteOrderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteOrderTest.swift; sourceTree = "<group>"; };
+		DABFDBB61E988D5100B75179 /* NetworkInterfaceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkInterfaceTest.swift; sourceTree = "<group>"; };
+		DABFDBBA1E988D5B00B75179 /* AddrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrInfo.h; sourceTree = "<group>"; };
+		DABFDBBB1E988D5B00B75179 /* AddrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrInfo.m; sourceTree = "<group>"; };
+		DABFDBBC1E988D5B00B75179 /* BSDSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDSocketClient.h; sourceTree = "<group>"; };
+		DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDSocketClient.m; sourceTree = "<group>"; };
+		DABFDBBE1E988D5B00B75179 /* BSDSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDSocketServer.h; sourceTree = "<group>"; };
+		DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDSocketServer.m; sourceTree = "<group>"; };
+		DABFDBC01E988D5B00B75179 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteOrder.h; sourceTree = "<group>"; };
+		DABFDBC11E988D5B00B75179 /* ByteOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByteOrder.m; sourceTree = "<group>"; };
+		DABFDBC21E988D5B00B75179 /* NetworkInterfaceAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterfaceAddress.h; sourceTree = "<group>"; };
+		DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceAddress.m; sourceTree = "<group>"; };
+		DABFDBC41E988D5B00B75179 /* NetworkInterfaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterfaceUtil.h; sourceTree = "<group>"; };
+		DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DA48A3BE1E948A7400C342F2 /* Frameworks */ = {
+		DABFDB4C1E988A2700B75179 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA48A3DC1E94954000C342F2 /* Frameworks */ = {
+		DABFDB941E988B2800B75179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFDBA71E988B8800B75179 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,8 +111,10 @@
 		DA48A3B81E948A7400C342F2 = {
 			isa = PBXGroup;
 			children = (
-				DA48A3C31E948A7400C342F2 /* NetworkPragramming */,
-				DA48A3E01E94954000C342F2 /* NetworkPragrammingTests */,
+				DABFDBB91E988D5B00B75179 /* Ch-01 */,
+				DABFDB501E988A2700B75179 /* Client */,
+				DABFDB981E988B2800B75179 /* Server */,
+				DABFDBAB1E988B8800B75179 /* UnitTesting */,
 				DA48A3C21E948A7400C342F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,90 +122,122 @@
 		DA48A3C21E948A7400C342F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA48A3C11E948A7400C342F2 /* NetworkPragramming.app */,
-				DA48A3DF1E94954000C342F2 /* NetworkPragrammingTests.xctest */,
+				DABFDB4F1E988A2700B75179 /* Client.app */,
+				DABFDB971E988B2800B75179 /* Server.app */,
+				DABFDBAA1E988B8800B75179 /* UnitTesting.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA48A3C31E948A7400C342F2 /* NetworkPragramming */ = {
+		DABFDB501E988A2700B75179 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				DA48A3D31E948A9800C342F2 /* Utils */,
-				DA48A3C41E948A7400C342F2 /* AppDelegate.swift */,
-				DA48A3C61E948A7400C342F2 /* ViewController.swift */,
-				DA48A3DA1E94929600C342F2 /* NetworkPragramming-Bridging-Header.h */,
-				DA48A3C81E948A7400C342F2 /* Assets.xcassets */,
-				DA48A3CA1E948A7400C342F2 /* Main.storyboard */,
-				DA48A3CD1E948A7400C342F2 /* Info.plist */,
+				DABFDB511E988A2700B75179 /* AppDelegate.swift */,
+				DABFDB531E988A2700B75179 /* ViewController.swift */,
+				DABFDB551E988A2700B75179 /* Main.storyboard */,
+				DABFDB581E988A2700B75179 /* Assets.xcassets */,
+				DABFDB5A1E988A2700B75179 /* LaunchScreen.storyboard */,
+				DABFDB5D1E988A2700B75179 /* Info.plist */,
 			);
-			path = NetworkPragramming;
+			path = Client;
 			sourceTree = "<group>";
 		};
-		DA48A3D31E948A9800C342F2 /* Utils */ = {
+		DABFDB981E988B2800B75179 /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				DA48A3D71E948DCE00C342F2 /* ByteOrder.h */,
-				DA48A3D81E948DCE00C342F2 /* ByteOrder.m */,
-				DAEA683A1E94E1E800176180 /* NetworkInterfaceUtil.h */,
-				DAEA683B1E94E1E800176180 /* NetworkInterfaceUtil.m */,
-				DAEA683D1E94E26C00176180 /* NetworkInterfaceAddress.h */,
-				DAEA683E1E94E26C00176180 /* NetworkInterfaceAddress.m */,
-				DA3E40FC1E973B5800D95BFA /* AddrInfo.h */,
-				DA3E40FD1E973B5800D95BFA /* AddrInfo.m */,
-				DAE7E6E21E97718300B4A685 /* BSDSocketServer.h */,
-				DAE7E6E31E97718300B4A685 /* BSDSocketServer.m */,
+				DABFDB991E988B2800B75179 /* AppDelegate.swift */,
+				DABFDB9B1E988B2800B75179 /* ViewController.swift */,
+				DABFDB9D1E988B2800B75179 /* Assets.xcassets */,
+				DABFDB9F1E988B2800B75179 /* Main.storyboard */,
+				DABFDBA21E988B2800B75179 /* Info.plist */,
+				DABFDBB41E988BBC00B75179 /* Server-Bridging-Header.h */,
 			);
-			path = Utils;
+			path = Server;
 			sourceTree = "<group>";
 		};
-		DA48A3E01E94954000C342F2 /* NetworkPragrammingTests */ = {
+		DABFDBAB1E988B8800B75179 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
-				DA48A3E11E94954000C342F2 /* NetworkPragrammingTests.swift */,
-				DA48A3E31E94954000C342F2 /* Info.plist */,
-				DA48A3E91E9495A200C342F2 /* ByteOrderTest.swift */,
-				DAEA68401E94E84300176180 /* NetworkInterfaceTest.swift */,
+				DABFDBAC1E988B8800B75179 /* UnitTesting.swift */,
+				DABFDBAE1E988B8800B75179 /* Info.plist */,
+				DABFDBB51E988D5100B75179 /* ByteOrderTest.swift */,
+				DABFDBB61E988D5100B75179 /* NetworkInterfaceTest.swift */,
 			);
-			path = NetworkPragrammingTests;
+			path = UnitTesting;
+			sourceTree = "<group>";
+		};
+		DABFDBB91E988D5B00B75179 /* Ch-01 */ = {
+			isa = PBXGroup;
+			children = (
+				DABFDBBA1E988D5B00B75179 /* AddrInfo.h */,
+				DABFDBBB1E988D5B00B75179 /* AddrInfo.m */,
+				DABFDBBC1E988D5B00B75179 /* BSDSocketClient.h */,
+				DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */,
+				DABFDBBE1E988D5B00B75179 /* BSDSocketServer.h */,
+				DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */,
+				DABFDBC01E988D5B00B75179 /* ByteOrder.h */,
+				DABFDBC11E988D5B00B75179 /* ByteOrder.m */,
+				DABFDBC21E988D5B00B75179 /* NetworkInterfaceAddress.h */,
+				DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */,
+				DABFDBC41E988D5B00B75179 /* NetworkInterfaceUtil.h */,
+				DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */,
+			);
+			path = "Ch-01";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA48A3C01E948A7400C342F2 /* NetworkPragramming */ = {
+		DABFDB4E1E988A2700B75179 /* Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA48A3D01E948A7400C342F2 /* Build configuration list for PBXNativeTarget "NetworkPragramming" */;
+			buildConfigurationList = DABFDB5E1E988A2700B75179 /* Build configuration list for PBXNativeTarget "Client" */;
 			buildPhases = (
-				DA48A3BD1E948A7400C342F2 /* Sources */,
-				DA48A3BE1E948A7400C342F2 /* Frameworks */,
-				DA48A3BF1E948A7400C342F2 /* Resources */,
+				DABFDB4B1E988A2700B75179 /* Sources */,
+				DABFDB4C1E988A2700B75179 /* Frameworks */,
+				DABFDB4D1E988A2700B75179 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NetworkPragramming;
-			productName = NetworkPragramming;
-			productReference = DA48A3C11E948A7400C342F2 /* NetworkPragramming.app */;
+			name = Client;
+			productName = Client;
+			productReference = DABFDB4F1E988A2700B75179 /* Client.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA48A3DE1E94954000C342F2 /* NetworkPragrammingTests */ = {
+		DABFDB961E988B2800B75179 /* Server */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA48A3E81E94954000C342F2 /* Build configuration list for PBXNativeTarget "NetworkPragrammingTests" */;
+			buildConfigurationList = DABFDBA31E988B2800B75179 /* Build configuration list for PBXNativeTarget "Server" */;
 			buildPhases = (
-				DA48A3DB1E94954000C342F2 /* Sources */,
-				DA48A3DC1E94954000C342F2 /* Frameworks */,
-				DA48A3DD1E94954000C342F2 /* Resources */,
+				DABFDB931E988B2800B75179 /* Sources */,
+				DABFDB941E988B2800B75179 /* Frameworks */,
+				DABFDB951E988B2800B75179 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA48A3E51E94954000C342F2 /* PBXTargetDependency */,
 			);
-			name = NetworkPragrammingTests;
-			productName = NetworkPragrammingTests;
-			productReference = DA48A3DF1E94954000C342F2 /* NetworkPragrammingTests.xctest */;
+			name = Server;
+			productName = Server;
+			productReference = DABFDB971E988B2800B75179 /* Server.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DABFDBA91E988B8800B75179 /* UnitTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFDBB11E988B8800B75179 /* Build configuration list for PBXNativeTarget "UnitTesting" */;
+			buildPhases = (
+				DABFDBA61E988B8800B75179 /* Sources */,
+				DABFDBA71E988B8800B75179 /* Frameworks */,
+				DABFDBA81E988B8800B75179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABFDBB01E988B8800B75179 /* PBXTargetDependency */,
+			);
+			name = UnitTesting;
+			productName = UnitTesting;
+			productReference = DABFDBAA1E988B8800B75179 /* UnitTesting.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,17 +250,21 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = hzyuxiaohua;
 				TargetAttributes = {
-					DA48A3C01E948A7400C342F2 = {
+					DABFDB4E1E988A2700B75179 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 3LH7676BHR;
-						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					DA48A3DE1E94954000C342F2 = {
+					DABFDB961E988B2800B75179 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 3LH7676BHR;
 						ProvisioningStyle = Automatic;
-						TestTargetID = DA48A3C01E948A7400C342F2;
+					};
+					DABFDBA91E988B8800B75179 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3LH7676BHR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DABFDB961E988B2800B75179;
 					};
 				};
 			};
@@ -209,23 +281,34 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA48A3C01E948A7400C342F2 /* NetworkPragramming */,
-				DA48A3DE1E94954000C342F2 /* NetworkPragrammingTests */,
+				DABFDB4E1E988A2700B75179 /* Client */,
+				DABFDB961E988B2800B75179 /* Server */,
+				DABFDBA91E988B8800B75179 /* UnitTesting */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DA48A3BF1E948A7400C342F2 /* Resources */ = {
+		DABFDB4D1E988A2700B75179 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA48A3C91E948A7400C342F2 /* Assets.xcassets in Resources */,
-				DA48A3CC1E948A7400C342F2 /* Main.storyboard in Resources */,
+				DABFDB5C1E988A2700B75179 /* LaunchScreen.storyboard in Resources */,
+				DABFDB591E988A2700B75179 /* Assets.xcassets in Resources */,
+				DABFDB571E988A2700B75179 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA48A3DD1E94954000C342F2 /* Resources */ = {
+		DABFDB951E988B2800B75179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFDB9E1E988B2800B75179 /* Assets.xcassets in Resources */,
+				DABFDBA11E988B2800B75179 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFDBA81E988B8800B75179 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,45 +318,83 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DA48A3BD1E948A7400C342F2 /* Sources */ = {
+		DABFDB4B1E988A2700B75179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE7E6E41E97718300B4A685 /* BSDSocketServer.m in Sources */,
-				DA48A3C71E948A7400C342F2 /* ViewController.swift in Sources */,
-				DAEA683F1E94E26C00176180 /* NetworkInterfaceAddress.m in Sources */,
-				DA48A3C51E948A7400C342F2 /* AppDelegate.swift in Sources */,
-				DAEA683C1E94E1E800176180 /* NetworkInterfaceUtil.m in Sources */,
-				DA3E40FE1E973B5800D95BFA /* AddrInfo.m in Sources */,
-				DA48A3D91E948DCE00C342F2 /* ByteOrder.m in Sources */,
+				DABFDB541E988A2700B75179 /* ViewController.swift in Sources */,
+				DABFDBC91E988D5B00B75179 /* BSDSocketClient.m in Sources */,
+				DABFDBD51E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
+				DABFDBD21E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */,
+				DABFDBCF1E988D5B00B75179 /* ByteOrder.m in Sources */,
+				DABFDBCC1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
+				DABFDBC61E988D5B00B75179 /* AddrInfo.m in Sources */,
+				DABFDB521E988A2700B75179 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA48A3DB1E94954000C342F2 /* Sources */ = {
+		DABFDB931E988B2800B75179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA48A3EA1E9495A200C342F2 /* ByteOrderTest.swift in Sources */,
-				DAEA68411E94E84300176180 /* NetworkInterfaceTest.swift in Sources */,
-				DA48A3E21E94954000C342F2 /* NetworkPragrammingTests.swift in Sources */,
+				DABFDB9C1E988B2800B75179 /* ViewController.swift in Sources */,
+				DABFDBCA1E988D5B00B75179 /* BSDSocketClient.m in Sources */,
+				DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
+				DABFDBD31E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */,
+				DABFDBD01E988D5B00B75179 /* ByteOrder.m in Sources */,
+				DABFDBCD1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
+				DABFDBC71E988D5B00B75179 /* AddrInfo.m in Sources */,
+				DABFDB9A1E988B2800B75179 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFDBA61E988B8800B75179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFDBC81E988D5B00B75179 /* AddrInfo.m in Sources */,
+				DABFDBCE1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
+				DABFDBD11E988D5B00B75179 /* ByteOrder.m in Sources */,
+				DABFDBCB1E988D5B00B75179 /* BSDSocketClient.m in Sources */,
+				DABFDBB71E988D5100B75179 /* ByteOrderTest.swift in Sources */,
+				DABFDBD41E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */,
+				DABFDBB81E988D5100B75179 /* NetworkInterfaceTest.swift in Sources */,
+				DABFDBAD1E988B8800B75179 /* UnitTesting.swift in Sources */,
+				DABFDBD71E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA48A3E51E94954000C342F2 /* PBXTargetDependency */ = {
+		DABFDBB01E988B8800B75179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA48A3C01E948A7400C342F2 /* NetworkPragramming */;
-			targetProxy = DA48A3E41E94954000C342F2 /* PBXContainerItemProxy */;
+			target = DABFDB961E988B2800B75179 /* Server */;
+			targetProxy = DABFDBAF1E988B8800B75179 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA48A3CA1E948A7400C342F2 /* Main.storyboard */ = {
+		DABFDB551E988A2700B75179 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DA48A3CB1E948A7400C342F2 /* Base */,
+				DABFDB561E988A2700B75179 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DABFDB5A1E988A2700B75179 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABFDB5B1E988A2700B75179 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DABFDB9F1E988B2800B75179 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABFDBA01E988B2800B75179 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -373,68 +494,98 @@
 			};
 			name = Release;
 		};
-		DA48A3D11E948A7400C342F2 /* Debug */ = {
+		DABFDB5F1E988A2700B75179 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3LH7676BHR;
-				INFOPLIST_FILE = NetworkPragramming/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragramming;
+				INFOPLIST_FILE = Client/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		DA48A3D21E948A7400C342F2 /* Release */ = {
+		DABFDB601E988A2700B75179 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3LH7676BHR;
+				INFOPLIST_FILE = Client/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DABFDBA41E988B2800B75179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3LH7676BHR;
-				INFOPLIST_FILE = NetworkPragramming/Info.plist;
+				INFOPLIST_FILE = Server/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragramming;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.Server;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hzyuxiaohua/projects/NetworkPragraming/Server/Server-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DABFDBA51E988B2800B75179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3LH7676BHR;
+				INFOPLIST_FILE = Server/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.Server;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hzyuxiaohua/projects/NetworkPragraming/Server/Server-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		DA48A3E61E94954000C342F2 /* Debug */ = {
+		DABFDBB21E988B8800B75179 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3LH7676BHR;
-				INFOPLIST_FILE = NetworkPragrammingTests/Info.plist;
+				INFOPLIST_FILE = UnitTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragrammingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.UnitTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkPragramming.app/Contents/MacOS/NetworkPragramming";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Server.app/Contents/MacOS/Server";
 			};
 			name = Debug;
 		};
-		DA48A3E71E94954000C342F2 /* Release */ = {
+		DABFDBB31E988B8800B75179 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3LH7676BHR;
-				INFOPLIST_FILE = NetworkPragrammingTests/Info.plist;
+				INFOPLIST_FILE = UnitTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xy.NetworkPragrammingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xy.UnitTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NetworkPragramming/NetworkPragramming-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkPragramming.app/Contents/MacOS/NetworkPragramming";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Server.app/Contents/MacOS/Server";
 			};
 			name = Release;
 		};
@@ -450,23 +601,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA48A3D01E948A7400C342F2 /* Build configuration list for PBXNativeTarget "NetworkPragramming" */ = {
+		DABFDB5E1E988A2700B75179 /* Build configuration list for PBXNativeTarget "Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA48A3D11E948A7400C342F2 /* Debug */,
-				DA48A3D21E948A7400C342F2 /* Release */,
+				DABFDB5F1E988A2700B75179 /* Debug */,
+				DABFDB601E988A2700B75179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		DA48A3E81E94954000C342F2 /* Build configuration list for PBXNativeTarget "NetworkPragrammingTests" */ = {
+		DABFDBA31E988B2800B75179 /* Build configuration list for PBXNativeTarget "Server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA48A3E61E94954000C342F2 /* Debug */,
-				DA48A3E71E94954000C342F2 /* Release */,
+				DABFDBA41E988B2800B75179 /* Debug */,
+				DABFDBA51E988B2800B75179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		DABFDBB11E988B8800B75179 /* Build configuration list for PBXNativeTarget "UnitTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFDBB21E988B8800B75179 /* Debug */,
+				DABFDBB31E988B8800B75179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

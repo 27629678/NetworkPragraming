@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  NetworkPragramming
+//  Server
 //
-//  Created by hzyuxiaohua on 05/04/2017.
-//  Copyright © 2017 hzyuxiaohua. All rights reserved.
+//  Created by hzyuxiaohua on 2017/4/8.
+//  Copyright © 2017年 hzyuxiaohua. All rights reserved.
 //
 
 import Cocoa
