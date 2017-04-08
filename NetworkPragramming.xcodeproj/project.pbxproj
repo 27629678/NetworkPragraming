@@ -21,22 +21,16 @@
 		DABFDBB81E988D5100B75179 /* NetworkInterfaceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBB61E988D5100B75179 /* NetworkInterfaceTest.swift */; };
 		DABFDBC61E988D5B00B75179 /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBB1E988D5B00B75179 /* AddrInfo.m */; };
 		DABFDBC71E988D5B00B75179 /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBB1E988D5B00B75179 /* AddrInfo.m */; };
-		DABFDBC81E988D5B00B75179 /* AddrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBB1E988D5B00B75179 /* AddrInfo.m */; };
 		DABFDBC91E988D5B00B75179 /* BSDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */; };
 		DABFDBCA1E988D5B00B75179 /* BSDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */; };
-		DABFDBCB1E988D5B00B75179 /* BSDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBD1E988D5B00B75179 /* BSDSocketClient.m */; };
 		DABFDBCC1E988D5B00B75179 /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */; };
 		DABFDBCD1E988D5B00B75179 /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */; };
-		DABFDBCE1E988D5B00B75179 /* BSDSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBBF1E988D5B00B75179 /* BSDSocketServer.m */; };
 		DABFDBCF1E988D5B00B75179 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC11E988D5B00B75179 /* ByteOrder.m */; };
 		DABFDBD01E988D5B00B75179 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC11E988D5B00B75179 /* ByteOrder.m */; };
-		DABFDBD11E988D5B00B75179 /* ByteOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC11E988D5B00B75179 /* ByteOrder.m */; };
 		DABFDBD21E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */; };
 		DABFDBD31E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */; };
-		DABFDBD41E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */; };
 		DABFDBD51E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
 		DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
-		DABFDBD71E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +75,9 @@
 		DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceAddress.m; sourceTree = "<group>"; };
 		DABFDBC41E988D5B00B75179 /* NetworkInterfaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterfaceUtil.h; sourceTree = "<group>"; };
 		DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterfaceUtil.m; sourceTree = "<group>"; };
+		DABFDBD81E988DE700B75179 /* General-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "General-Bridge-Header.h"; sourceTree = "<group>"; };
+		DABFDBD91E988E2500B75179 /* Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Client-Bridging-Header.h"; sourceTree = "<group>"; };
+		DABFDBDA1E988E3800B75179 /* UnitTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTesting-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +108,7 @@
 		DA48A3B81E948A7400C342F2 = {
 			isa = PBXGroup;
 			children = (
+				DABFDBD81E988DE700B75179 /* General-Bridge-Header.h */,
 				DABFDBB91E988D5B00B75179 /* Ch-01 */,
 				DABFDB501E988A2700B75179 /* Client */,
 				DABFDB981E988B2800B75179 /* Server */,
@@ -132,6 +130,7 @@
 		DABFDB501E988A2700B75179 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				DABFDBD91E988E2500B75179 /* Client-Bridging-Header.h */,
 				DABFDB511E988A2700B75179 /* AppDelegate.swift */,
 				DABFDB531E988A2700B75179 /* ViewController.swift */,
 				DABFDB551E988A2700B75179 /* Main.storyboard */,
@@ -158,6 +157,7 @@
 		DABFDBAB1E988B8800B75179 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				DABFDBDA1E988E3800B75179 /* UnitTesting-Bridging-Header.h */,
 				DABFDBAC1E988B8800B75179 /* UnitTesting.swift */,
 				DABFDBAE1E988B8800B75179 /* Info.plist */,
 				DABFDBB51E988D5100B75179 /* ByteOrderTest.swift */,
@@ -352,15 +352,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABFDBC81E988D5B00B75179 /* AddrInfo.m in Sources */,
-				DABFDBCE1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
-				DABFDBD11E988D5B00B75179 /* ByteOrder.m in Sources */,
-				DABFDBCB1E988D5B00B75179 /* BSDSocketClient.m in Sources */,
 				DABFDBB71E988D5100B75179 /* ByteOrderTest.swift in Sources */,
-				DABFDBD41E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */,
 				DABFDBB81E988D5100B75179 /* NetworkInterfaceTest.swift in Sources */,
 				DABFDBAD1E988B8800B75179 /* UnitTesting.swift in Sources */,
-				DABFDBD71E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hzyuxiaohua/projects/NetworkPragraming/Client/Client-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -522,6 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hzyuxiaohua/projects/NetworkPragraming/Client/Client-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -567,7 +563,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.UnitTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hzyuxiaohua/projects/NetworkPragraming/UnitTesting/UnitTesting-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Server.app/Contents/MacOS/Server";
 			};
@@ -583,7 +579,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.UnitTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hzyuxiaohua/projects/NetworkPragraming/UnitTesting/UnitTesting-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Server.app/Contents/MacOS/Server";
 			};

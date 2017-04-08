@@ -15,7 +15,7 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
         
-        startSocketServer()
+//        startSocketServer()
     }
 
     override var representedObject: Any? {
