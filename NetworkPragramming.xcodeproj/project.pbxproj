@@ -31,6 +31,7 @@
 		DABFDBD31E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC31E988D5B00B75179 /* NetworkInterfaceAddress.m */; };
 		DABFDBD51E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
 		DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
+		DABFDBDC1E98B52600B75179 /* SocketClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBDB1E98B52600B75179 /* SocketClientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		DABFDBD81E988DE700B75179 /* General-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "General-Bridge-Header.h"; sourceTree = "<group>"; };
 		DABFDBD91E988E2500B75179 /* Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Client-Bridging-Header.h"; sourceTree = "<group>"; };
 		DABFDBDA1E988E3800B75179 /* UnitTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTesting-Bridging-Header.h"; sourceTree = "<group>"; };
+		DABFDBDB1E98B52600B75179 /* SocketClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				DABFDB581E988A2700B75179 /* Assets.xcassets */,
 				DABFDB5A1E988A2700B75179 /* LaunchScreen.storyboard */,
 				DABFDB5D1E988A2700B75179 /* Info.plist */,
+				DABFDBDB1E98B52600B75179 /* SocketClientViewController.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				DABFDBC91E988D5B00B75179 /* BSDSocketClient.m in Sources */,
 				DABFDBD51E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
 				DABFDBD21E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */,
+				DABFDBDC1E98B52600B75179 /* SocketClientViewController.swift in Sources */,
 				DABFDBCF1E988D5B00B75179 /* ByteOrder.m in Sources */,
 				DABFDBCC1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
 				DABFDBC61E988D5B00B75179 /* AddrInfo.m in Sources */,

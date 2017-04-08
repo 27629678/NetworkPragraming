@@ -8,12 +8,13 @@
 
 #import "BSDSocketClient.h"
 
+#import <netdb.h>
 #import <sys/types.h>
 #import <arpa/inet.h>
 
 @interface BSDSocketClient ()
 
-@property (nonatomic, assign) NSInteger sock_fd;
+@property (nonatomic, assign) int sock_fd;
 
 @end
 
@@ -29,17 +30,42 @@
 
 - (ssize_t)sendMessage:(NSString *)message
 {
-    return [self sendData:[message dataUsingEncoding:NSUTF8StringEncoding]];
-}
-
-- (ssize_t)sendData:(NSData *)data
-{
-    return 0;
+    const char *ptr = [message cStringUsingEncoding:NSUTF8StringEncoding];
+    
+    size_t nleft = sizeof(ptr);
+    ssize_t nwriten;
+    size_t n = nleft;
+    while (nleft > 0) {
+        if ((nwriten = write(self.sock_fd, ptr, nleft)) <= 0) {
+            if (nwriten < 0 && errno == EINTR) {
+                nwriten = 0;
+            }
+            else {
+                self.error_code = BSDClientErrorCodeWriteError;
+                return -1;
+            }
+        }
+        
+        nleft -= nwriten;
+        ptr += nwriten;
+    }
+    
+    return n;
 }
 
 - (NSString *)recvMessageWithMaxChar:(int)max
 {
-    return @"";
+    ssize_t n;
+    char recv_line[max];
+    if ((n = recv(self.sock_fd, recv_line, max - 1, 0)) <= 0) {
+        self.error_code = BSDClientErrorCodeReadError;
+        
+        return @"Server Terminated Prematurely";
+    }
+    
+    recv_line[n] = '\0';
+    
+    return [NSString stringWithCString:recv_line encoding:NSUTF8StringEncoding];
 }
 
 #pragma mark - private
@@ -61,8 +87,11 @@
     server_addr.sin_port = htons(port);
     inet_pton(AF_INET, [ip cStringUsingEncoding:NSUTF8StringEncoding], &server_addr.sin_addr);
     
-    if (connect(AF_INET, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+    if (connect(self.sock_fd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
         self.error_code = BSDClientErrorCodeConnectError;
+        NSLog(@"%@", [NSString stringWithCString:gai_strerror(errno) encoding:NSASCIIStringEncoding]);
+        
+        return;
     }
     
     NSLog(@"Connection Success.");

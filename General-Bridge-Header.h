@@ -12,6 +12,7 @@
 #import "AddrInfo.h"
 #import "ByteOrder.h"
 #import "BSDSocketServer.h"
+#import "BSDSocketClient.h"
 #import "NetworkInterfaceUtil.h"
 
 #endif /* General_Bridge_Header_h */

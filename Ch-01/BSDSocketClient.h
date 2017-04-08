@@ -18,13 +18,12 @@ typedef NS_ENUM(NSUInteger, BSDClientErrorCode) {
 
 @interface BSDSocketClient : NSObject
 
-@property (nonatomic, assign) NSInteger error_code;
+@property (nonatomic, assign) BSDClientErrorCode error_code;
 
-+ (instancetype)connectTo:(NSString *)ip port:(NSUInteger)port;
++ (_Nonnull instancetype)connectTo:(NSString *_Nullable)ip port:(NSUInteger)port;
 
-- (ssize_t)sendData:(NSData *)data;
-- (ssize_t)sendMessage:(NSString *)message;
+- (ssize_t)sendMessage:(NSString *_Nullable)message;
 
-- (NSString *)recvMessageWithMaxChar:(int)max;
+- (NSString * _Nonnull )recvMessageWithMaxChar:(int)max;
 
 @end
