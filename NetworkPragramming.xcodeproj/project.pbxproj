@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA2F14691E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
 		DA2F146A1E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
+		DA2F146C1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2F146B1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift */; };
 		DABFDB521E988A2700B75179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB511E988A2700B75179 /* AppDelegate.swift */; };
 		DABFDB541E988A2700B75179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB531E988A2700B75179 /* ViewController.swift */; };
 		DABFDB571E988A2700B75179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB551E988A2700B75179 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		DA2F14671E9DC11C0096EFF3 /* CFNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkUtil.h; sourceTree = "<group>"; };
 		DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkUtil.m; sourceTree = "<group>"; };
+		DA2F146B1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFNetworkUtilViewController.swift; sourceTree = "<group>"; };
 		DABFDB4F1E988A2700B75179 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABFDB511E988A2700B75179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABFDB531E988A2700B75179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				DABFDB5A1E988A2700B75179 /* LaunchScreen.storyboard */,
 				DABFDB5D1E988A2700B75179 /* Info.plist */,
 				DABFDBDB1E98B52600B75179 /* SocketClientViewController.swift */,
+				DA2F146B1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2F146C1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift in Sources */,
 				DABFDB541E988A2700B75179 /* ViewController.swift in Sources */,
 				DABFDBC91E988D5B00B75179 /* BSDSocketClient.m in Sources */,
 				DABFDBD51E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,

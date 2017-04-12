@@ -20,8 +20,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         
         title = "test cases"
-        cases = ["socket client"]
-        targets = ["SocketClientViewController"]
+        cases = ["socket client", "CFNetwork Util"]
+        targets = ["SocketClientViewController", "CFNetworkUtilViewController"]
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
