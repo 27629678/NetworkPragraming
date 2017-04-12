@@ -26,10 +26,6 @@ void receiveData(CFSocketRef sRef,
         return;
     }
     
-    UInt8 buf[len];
-    CFDataGetBytes(dataRef, CFRangeMake(0, len), buf);
-    buf[len] = '\0';
-    
     NSString *text = [[NSString alloc] initWithData:(__bridge NSData *)data encoding:NSUTF8StringEncoding];
     NSLog(@"ReceiveText:%@", text);
     
