@@ -36,6 +36,7 @@ class UnitTesting: XCTestCase {
         
         let names = CFNetworkUtil.hostNames(forAddress: "14.215.177.37", errCode: &errCode);
         if errCode != .noError {
+            // WARN: Can not pass through this unit test
             XCTAssert(false)
         }
         else {
