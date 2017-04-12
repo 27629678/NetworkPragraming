@@ -44,6 +44,16 @@ class UnitTesting: XCTestCase {
         }
     }
     
+    func testCFSocketServer() {
+        let server = CFSocketServer()
+        server.listen(onPort: 2018)
+        
+        if server.errCode != .noError {
+            XCTAssert(false)
+            return
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

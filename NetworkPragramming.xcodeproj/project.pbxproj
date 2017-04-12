@@ -10,6 +10,8 @@
 		DA2F14691E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
 		DA2F146A1E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
 		DA2F146C1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2F146B1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift */; };
+		DA2F14751E9E14A40096EFF3 /* CFSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14741E9E14A40096EFF3 /* CFSocketServer.m */; };
+		DA2F14761E9E14A40096EFF3 /* CFSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14741E9E14A40096EFF3 /* CFSocketServer.m */; };
 		DABFDB521E988A2700B75179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB511E988A2700B75179 /* AppDelegate.swift */; };
 		DABFDB541E988A2700B75179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB531E988A2700B75179 /* ViewController.swift */; };
 		DABFDB571E988A2700B75179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB551E988A2700B75179 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		DA2F14671E9DC11C0096EFF3 /* CFNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkUtil.h; sourceTree = "<group>"; };
 		DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkUtil.m; sourceTree = "<group>"; };
 		DA2F146B1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFNetworkUtilViewController.swift; sourceTree = "<group>"; };
+		DA2F14731E9E14A40096EFF3 /* CFSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSocketServer.h; sourceTree = "<group>"; };
+		DA2F14741E9E14A40096EFF3 /* CFSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSocketServer.m; sourceTree = "<group>"; };
 		DABFDB4F1E988A2700B75179 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABFDB511E988A2700B75179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABFDB531E988A2700B75179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				DAC372A11E9C7A2700B5F553 /* HostUtil.m */,
 				DA2F14671E9DC11C0096EFF3 /* CFNetworkUtil.h */,
 				DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */,
+				DA2F14731E9E14A40096EFF3 /* CFSocketServer.h */,
+				DA2F14741E9E14A40096EFF3 /* CFSocketServer.m */,
 			);
 			path = "Ch-02";
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2F14751E9E14A40096EFF3 /* CFSocketServer.m in Sources */,
 				DA2F146C1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift in Sources */,
 				DABFDB541E988A2700B75179 /* ViewController.swift in Sources */,
 				DABFDBC91E988D5B00B75179 /* BSDSocketClient.m in Sources */,
@@ -370,6 +377,7 @@
 				DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
 				DABFDBD31E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */,
 				DABFDBD01E988D5B00B75179 /* ByteOrder.m in Sources */,
+				DA2F14761E9E14A40096EFF3 /* CFSocketServer.m in Sources */,
 				DAC372A31E9C7A2700B5F553 /* HostUtil.m in Sources */,
 				DABFDBCD1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
 				DABFDBC71E988D5B00B75179 /* AddrInfo.m in Sources */,
