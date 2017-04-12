@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA2F14691E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
+		DA2F146A1E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
 		DABFDB521E988A2700B75179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB511E988A2700B75179 /* AppDelegate.swift */; };
 		DABFDB541E988A2700B75179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDB531E988A2700B75179 /* ViewController.swift */; };
 		DABFDB571E988A2700B75179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFDB551E988A2700B75179 /* Main.storyboard */; };
@@ -32,6 +34,7 @@
 		DABFDBD51E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
 		DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */; };
 		DABFDBDC1E98B52600B75179 /* SocketClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFDBDB1E98B52600B75179 /* SocketClientViewController.swift */; };
+		DAC372A31E9C7A2700B5F553 /* HostUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC372A11E9C7A2700B5F553 /* HostUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA2F14671E9DC11C0096EFF3 /* CFNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkUtil.h; sourceTree = "<group>"; };
+		DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkUtil.m; sourceTree = "<group>"; };
 		DABFDB4F1E988A2700B75179 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABFDB511E988A2700B75179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABFDB531E988A2700B75179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +85,8 @@
 		DABFDBD91E988E2500B75179 /* Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Client-Bridging-Header.h"; sourceTree = "<group>"; };
 		DABFDBDA1E988E3800B75179 /* UnitTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTesting-Bridging-Header.h"; sourceTree = "<group>"; };
 		DABFDBDB1E98B52600B75179 /* SocketClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientViewController.swift; sourceTree = "<group>"; };
+		DAC372A01E9C7A2700B5F553 /* HostUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostUtil.h; sourceTree = "<group>"; };
+		DAC372A11E9C7A2700B5F553 /* HostUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,7 @@
 			children = (
 				DABFDBD81E988DE700B75179 /* General-Bridge-Header.h */,
 				DABFDBB91E988D5B00B75179 /* Ch-01 */,
+				DAC3729F1E9C798800B5F553 /* Ch-02 */,
 				DABFDB501E988A2700B75179 /* Client */,
 				DABFDB981E988B2800B75179 /* Server */,
 				DABFDBAB1E988B8800B75179 /* UnitTesting */,
@@ -186,6 +194,17 @@
 				DABFDBC51E988D5B00B75179 /* NetworkInterfaceUtil.m */,
 			);
 			path = "Ch-01";
+			sourceTree = "<group>";
+		};
+		DAC3729F1E9C798800B5F553 /* Ch-02 */ = {
+			isa = PBXGroup;
+			children = (
+				DAC372A01E9C7A2700B5F553 /* HostUtil.h */,
+				DAC372A11E9C7A2700B5F553 /* HostUtil.m */,
+				DA2F14671E9DC11C0096EFF3 /* CFNetworkUtil.h */,
+				DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */,
+			);
+			path = "Ch-02";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +353,7 @@
 				DABFDBCC1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
 				DABFDBC61E988D5B00B75179 /* AddrInfo.m in Sources */,
 				DABFDB521E988A2700B75179 /* AppDelegate.swift in Sources */,
+				DA2F14691E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +366,11 @@
 				DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
 				DABFDBD31E988D5B00B75179 /* NetworkInterfaceAddress.m in Sources */,
 				DABFDBD01E988D5B00B75179 /* ByteOrder.m in Sources */,
+				DAC372A31E9C7A2700B5F553 /* HostUtil.m in Sources */,
 				DABFDBCD1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
 				DABFDBC71E988D5B00B75179 /* AddrInfo.m in Sources */,
 				DABFDB9A1E988B2800B75179 /* AppDelegate.swift in Sources */,
+				DA2F146A1E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +630,7 @@
 				DABFDB601E988A2700B75179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DABFDBA31E988B2800B75179 /* Build configuration list for PBXNativeTarget "Server" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +639,7 @@
 				DABFDBA51E988B2800B75179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DABFDBB11E988B8800B75179 /* Build configuration list for PBXNativeTarget "UnitTesting" */ = {
 			isa = XCConfigurationList;
@@ -624,6 +648,7 @@
 				DABFDBB31E988B8800B75179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

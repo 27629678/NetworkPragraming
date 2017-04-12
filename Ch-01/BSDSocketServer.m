@@ -26,7 +26,9 @@
 
 - (void)startEchoServer
 {
-    [self echoWithListenDescriptor:self.listen_fd];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        [self echoWithListenDescriptor:self.listen_fd];
+    });
 }
 
 - (instancetype)initWithPort:(NSUInteger)port

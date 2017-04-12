@@ -20,9 +20,27 @@ class UnitTesting: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testCFNetworkUtil() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        var errCode: CFNetworkErrorCode = .noError
+        let adrs = CFNetworkUtil.addresses(forHost: "www.baidu.com", errCode: &errCode)
+        
+        if errCode != .noError {
+            XCTAssert(false)
+        }
+        else {
+            print("\(String(describing: adrs))")
+        }
+        
+        let names = CFNetworkUtil.hostNames(forAddress: "14.215.177.37", errCode: &errCode);
+        if errCode != .noError {
+            XCTAssert(false)
+        }
+        else {
+            print("\(String(describing: names))")
+        }
     }
     
     func testPerformanceExample() {
