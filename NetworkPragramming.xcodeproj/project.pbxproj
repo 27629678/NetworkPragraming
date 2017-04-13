@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0C71451E9F125C00B4F978 /* CFSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C71441E9F125C00B4F978 /* CFSocketClient.swift */; };
+		DA0C71461E9F125C00B4F978 /* CFSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C71441E9F125C00B4F978 /* CFSocketClient.swift */; };
+		DA0C71471E9F172300B4F978 /* CFSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C71441E9F125C00B4F978 /* CFSocketClient.swift */; };
 		DA2F14691E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
 		DA2F146A1E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */; };
 		DA2F146C1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2F146B1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift */; };
@@ -51,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0C71441E9F125C00B4F978 /* CFSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFSocketClient.swift; sourceTree = "<group>"; };
 		DA2F14671E9DC11C0096EFF3 /* CFNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkUtil.h; sourceTree = "<group>"; };
 		DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkUtil.m; sourceTree = "<group>"; };
 		DA2F146B1E9E0DE00096EFF3 /* CFNetworkUtilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFNetworkUtilViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				DA2F14681E9DC11C0096EFF3 /* CFNetworkUtil.m */,
 				DA2F14731E9E14A40096EFF3 /* CFSocketServer.h */,
 				DA2F14741E9E14A40096EFF3 /* CFSocketServer.m */,
+				DA0C71441E9F125C00B4F978 /* CFSocketClient.swift */,
 			);
 			path = "Ch-02";
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				DABFDBDC1E98B52600B75179 /* SocketClientViewController.swift in Sources */,
 				DABFDBCF1E988D5B00B75179 /* ByteOrder.m in Sources */,
 				DABFDBCC1E988D5B00B75179 /* BSDSocketServer.m in Sources */,
+				DA0C71451E9F125C00B4F978 /* CFSocketClient.swift in Sources */,
 				DABFDBC61E988D5B00B75179 /* AddrInfo.m in Sources */,
 				DABFDB521E988A2700B75179 /* AppDelegate.swift in Sources */,
 				DA2F14691E9DC11C0096EFF3 /* CFNetworkUtil.m in Sources */,
@@ -372,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0C71461E9F125C00B4F978 /* CFSocketClient.swift in Sources */,
 				DABFDB9C1E988B2800B75179 /* ViewController.swift in Sources */,
 				DABFDBCA1E988D5B00B75179 /* BSDSocketClient.m in Sources */,
 				DABFDBD61E988D5B00B75179 /* NetworkInterfaceUtil.m in Sources */,
@@ -390,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0C71471E9F172300B4F978 /* CFSocketClient.swift in Sources */,
 				DABFDBB71E988D5100B75179 /* ByteOrderTest.swift in Sources */,
 				DABFDBB81E988D5100B75179 /* NetworkInterfaceTest.swift in Sources */,
 				DABFDBAD1E988B8800B75179 /* UnitTesting.swift in Sources */,
