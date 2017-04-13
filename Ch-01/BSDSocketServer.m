@@ -108,7 +108,7 @@
     while ((n = recv(sock_fd, buf, MAXLINE - 1, 0)) > 0) {
         [self written:sock_fd char:buf size:n];
         buf[n]='\0';
-        NSLog(@"%s",buf);
+        NSLog(@"Receive Client Message:%s",buf);
     }
     
     NSLog(@"Closing Socket");

@@ -56,23 +56,30 @@ class CFSocketClient: NSObject {
     }
 
     open func write(text: String) -> Int {
-        if text.characters.count == 0 {
+        if text.characters.count == 0 || errCode != .noError {
             return -1
         }
         
         let buf = text.cString(using: .ascii)
-        let len = MemoryLayout.size(ofValue: buf)
         
+        // WARN: can not use this size(CChar type size) always return 8
+//        MemoryLayout.size(ofValue: buf)
         UnsafeMutablePointer(mutating: buf)?.withMemoryRebound(to: UInt8.self, capacity: 1, { (pointer) -> Void in
-            let data = CFDataCreate(kCFAllocatorDefault, pointer, len)
+            let data = CFDataCreate(kCFAllocatorDefault, pointer, text.characters.count)
             guard CFSocketSendData(sockfd!, nil, data, 30) == .success else {
                 errCode = .writeError
                 return
             }
         })
         
-        // TODO: read message echoed from server
+//        send(CFSocketGetNative(sockfd!), UnsafeMutablePointer(mutating: buf), text.characters.count, 0)
         
-        return errCode == .noError ? len : -1
+        // read, have not find CFSocketRead method, use bsd socket recv method instead
+        let MAXLINE = 10000
+        let buff = Array<CChar>()
+        recv(CFSocketGetNative(sockfd!), UnsafeMutableRawPointer(mutating: buff), MAXLINE, 0)
+        print("Echo:\(String(describing: String.init(utf8String: buff)))")
+        
+        return errCode == .noError ? text.characters.count : -1
     }
 }
