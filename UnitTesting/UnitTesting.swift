@@ -55,6 +55,11 @@ class UnitTesting: XCTestCase {
     }
     
     func testCFSocketClient() {
+        
+        guard NetworkDetect.connected() else {
+            return
+        }
+        
         let client = CFSocketClient()
         
         client.connect(to: "0.0.0.0", port: 2017)
