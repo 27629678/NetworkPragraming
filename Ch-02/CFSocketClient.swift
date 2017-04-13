@@ -40,23 +40,21 @@ class CFSocketClient: NSObject {
         serverAdr.sin_port = CFSwapInt16(port)
         inet_pton(AF_INET, ip.cString(using: .ascii), &(serverAdr.sin_addr))
         
-        // too inconvenient(tricky)
-        _ = withUnsafePointer(to: &serverAdr) {
-            $0.withMemoryRebound(to: UInt8.self, capacity: 1) {
-                guard let adrDataRef = CFDataCreate(kCFAllocatorDefault, $0, MemoryLayout<sockaddr_in>.size) else {
-                    errCode = .connectError
-                    return
-                }
-                
-                guard CFSocketConnectToAddress(sockfd!, adrDataRef, 30) == .success else {
-                    errCode = .connectError
-                    return
-                }
+        UnsafeMutablePointer(&serverAdr).withMemoryRebound(to: UInt8.self, capacity: 1) {
+            guard let adrDataRef = CFDataCreate(kCFAllocatorDefault, $0, MemoryLayout<sockaddr_in>.size) else {
+                errCode = .connectError
+                return
+            }
+            
+            guard CFSocketConnectToAddress(sockfd!, adrDataRef, 30) == .success else {
+                errCode = .connectError
+                return
             }
         }
         
+        print("Connect to \(ip):\(port)")
     }
-    
+
     open func write(text: String) -> Int {
         
         return 0
