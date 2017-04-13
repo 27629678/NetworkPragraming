@@ -56,7 +56,23 @@ class CFSocketClient: NSObject {
     }
 
     open func write(text: String) -> Int {
+        if text.characters.count == 0 {
+            return -1
+        }
         
-        return 0
+        let buf = text.cString(using: .ascii)
+        let len = MemoryLayout.size(ofValue: buf)
+        
+        UnsafeMutablePointer(mutating: buf)?.withMemoryRebound(to: UInt8.self, capacity: 1, { (pointer) -> Void in
+            let data = CFDataCreate(kCFAllocatorDefault, pointer, len)
+            guard CFSocketSendData(sockfd!, nil, data, 30) == .success else {
+                errCode = .writeError
+                return
+            }
+        })
+        
+        // TODO: read message echoed from server
+        
+        return errCode == .noError ? len : -1
     }
 }

@@ -60,6 +60,10 @@ class UnitTesting: XCTestCase {
         client.connect(to: "0.0.0.0", port: 2017)
         
         XCTAssert(client.errCode == .noError)
+        
+        _ = client.write(text: "hello, socket")
+        
+        RunLoop.current.run(until: Date.init(timeIntervalSinceNow: 30))
     }
     
     func testPerformanceExample() {
