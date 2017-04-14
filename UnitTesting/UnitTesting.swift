@@ -56,7 +56,7 @@ class UnitTesting: XCTestCase {
     
     func testCFSocketClient() {
         
-        guard NetworkDetect.connected() else {
+        guard NetworkDetect.connectType() != .none else {
             return
         }
         
